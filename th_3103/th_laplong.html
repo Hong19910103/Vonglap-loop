@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thực hành vòng lặp lồng nhau</title>
+</head>
+<body>
+<script>
+    let i;
+    let j;
+    let bang;
+    bang = "<table border='1' width='300' cellspacing='0' cellpadding='3'>";//tạo bảng
+    for (i = 1; i <= 12; i++) {
+        bang = bang + "<tr>"; //tạo hàng trong bảng
+        for (j = 1; j <= 10; j++) {
+            bang = bang + "<td>" + i * j + "</td>";//tạo ô trong hàng
+        }
+        bang = bang + "</tr>";// kết thúc hàng
+    }
+    bang = bang + "</table>"; // kết thúc bảng
+    document.write(bang);// in bảng ra
+
+</script>
+
+</body>
+</html>
